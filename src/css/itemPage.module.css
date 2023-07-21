@@ -1,0 +1,118 @@
+.contain-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.contain-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.contain-description {
+  font-size: 0.9rem;
+  width: 70%;
+  margin: 2rem 0;
+}
+
+.contain-item-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.consist-container {
+  margin: 2% 0;
+}
+.consist-title {
+  font-size: calc(24px + 15vw);
+  text-transform: uppercase;
+}
+
+.consist-sub-title {
+  font-size: 3rem;
+}
+
+.consist-description {
+  font-size: 0.9rem;
+  width: 70%;
+  margin: 2rem 0;
+}
+
+.consist-image {
+  border-radius: 15px;
+  background: url(../assets/sV6ajoYp_2xtest.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.consist-container_ingredients {
+  margin: 22% 0;
+}
+
+.consist_ingredients-title {
+  font-size: 2rem;
+}
+
+.consist_ingredients-description {
+  font-size: 0.9rem;
+}
+
+hr {
+  border: 1px solid;
+  color: white;
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+.item-row {
+  padding: 0 1%;
+}
+
+.seeMore-container {
+  display: flex;
+}
+
+.seeMore-item {
+  margin: 0.9%;
+}
+
+@media only screen and (max-width: 992px) {
+  .contain-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .contain-description {
+    margin: 3% auto;
+  }
+
+  .order-button {
+    margin: 3% auto;
+  }
+
+  .contain-item-image {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+  }
+  .consist-title {
+    text-align: center;
+  }
+  .consist-container {
+    text-align: center;
+  }
+
+  .consist-description {
+    margin: 5% auto;
+    text-align: left;
+  }
+
+  .seeMore-container {
+    flex-wrap: wrap;
+  }
+}

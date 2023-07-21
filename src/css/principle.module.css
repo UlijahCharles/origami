@@ -1,0 +1,44 @@
+.principle-container {
+  padding-top: 5%;
+}
+
+.principle-text_title {
+  color: white;
+  text-align: left;
+  font-size: calc(16px + 2vw);
+}
+
+.principle-text_description {
+  color: white;
+  font-size: calc(8px + 1vw);
+
+  text-align: left;
+}
+.principle-text-container {
+  width: 50%;
+}
+.principle-text-container,
+.principle-image-container {
+  float: left;
+}
+
+.principle-image {
+  width: 350px;
+}
+
+@media only screen and (max-width: 1467px) {
+  .principle-text-container,
+  .principle-image-container {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+
+  .principle-text_title {
+    text-align: center;
+  }
+
+  .principle-item {
+    margin: 1% 0;
+  }
+}

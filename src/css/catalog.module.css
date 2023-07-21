@@ -1,0 +1,127 @@
+.catalog-title {
+  text-transform: uppercase;
+  font-size: calc(24px + 13vw);
+  color: white;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.catalog-sub-title {
+  color: white;
+  text-align: left;
+  font-size: calc(16px + 1.4vw);
+  margin-bottom: 5%;
+}
+
+.catalog-logo {
+  margin-left: 4%;
+  width: 4cqw;
+  min-width: 72px;
+}
+
+.catalog-description {
+  color: white;
+  text-align: left;
+  font-size: calc(8px + 0.7vw);
+}
+
+.catalog-item {
+  width: 98%;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.catalog-item:hover {
+  transform: scale(1.025);
+  background: linear-gradient(white, gray);
+}
+
+.catalog-item-anchor:hover + .catalog-hover_text {
+  opacity: 1;
+  transform: translateY(20%);
+}
+
+.catalog-item-anchor:hover ~ .catalog-hover_subtext {
+  opacity: 1;
+  transform: translateY(60%);
+}
+
+.catalog-hover_text {
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+  opacity: 0;
+  transition: 1s;
+}
+
+.catalog-hover_subtext {
+  color: black;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  opacity: 0;
+  transition: 1s;
+}
+
+.catalog-item-relative-postion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#beautiful-ostrich {
+  background-color: #d9d9d9;
+}
+
+@media only screen and (max-width: 992px) {
+  .catalog-item-relative-postion {
+    position: static;
+  }
+
+  .catalog-hover_text {
+    bottom: 2rem;
+  }
+
+  .catalog-hover_subtext {
+    bottom: 1.5rem;
+  }
+
+  .catalog-title {
+    text-align: center;
+  }
+
+  .catalog-item {
+    margin: 2% 0;
+  }
+
+  .catalog-sub-title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1293px) {
+  #description-scroll {
+    max-height: 110px;
+    overflow: auto;
+  }
+
+  #description-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    background-color: transparent;
+  }
+
+  #description-scroll::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+
+  #description-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #a5a5a5;
+  }
+}

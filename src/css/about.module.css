@@ -1,0 +1,45 @@
+.about-container {
+  background-color: #171717;
+}
+
+.about-description_one {
+  color: white;
+  text-align: left;
+  margin-top: 20%;
+  min-width: 250px;
+  margin-bottom: 38%;
+}
+
+.about-description_two {
+  color: white;
+  text-align: left;
+  padding-top: 20%;
+  margin-bottom: 10%;
+}
+
+.about-description_three {
+  color: white;
+  text-align: left;
+}
+
+.about-img_one {
+  width: 100%;
+}
+
+.about-img_two {
+  width: 100%;
+  padding-top: 10%;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-description_one {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .about-description_two {
+    padding-top: 5%;
+
+    margin-bottom: 5%;
+  }
+}

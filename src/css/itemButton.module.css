@@ -1,0 +1,40 @@
+.catalog-item {
+  width: 100%;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.catalog-item:hover {
+  transform: scale(1.025);
+  background: linear-gradient(white, gray);
+}
+
+.catalog-hover_text {
+  color: black;
+  font-size: 2rem;
+  position: relative;
+  bottom: 4.3rem;
+  left: 1rem;
+  opacity: 0;
+  transition: 1s;
+}
+
+.catalog-hover_subtext {
+  color: black;
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 5rem;
+  left: 1rem;
+  opacity: 0;
+  transition: 1s;
+}
+
+.catalog-item-anchor:hover + .catalog-hover_text {
+  opacity: 1;
+  transform: translateY(20%);
+}
+
+.catalog-item-anchor:hover ~ .catalog-hover_subtext {
+  opacity: 1;
+  transform: translateY(60%);
+}

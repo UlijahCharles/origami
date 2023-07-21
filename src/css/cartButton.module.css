@@ -1,0 +1,7 @@
+.cart-button {
+  position: sticky;
+  padding: 0.7%;
+  bottom: 3%;
+  left: 90%;
+  border-radius: 10px;
+}
