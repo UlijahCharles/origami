@@ -20,6 +20,7 @@ const useFetch = () => {
           id: data[name].id,
           imageUrl: data[name].imageUrl,
           title: data[name].title,
+          price: data[name].price,
         });
       }
       setCatalogData(catalog);

@@ -1,5 +1,5 @@
 .catalog-item {
-  width: 100%;
+  max-width: 500px;
   border-radius: 15px;
   transition: 1s;
 }

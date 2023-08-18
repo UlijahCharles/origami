@@ -4,7 +4,12 @@ import arrow from "../assets/arrow-icon.png";
 
 export const Button = (props) => {
   return (
-    <button className={style["button-purchase"]}>
+    <button
+      className={style["button-purchase"]}
+      onClick={(e) => {
+        props.onAdd(props.itemData);
+      }}
+    >
       {props.text}
       <sup>
         <img

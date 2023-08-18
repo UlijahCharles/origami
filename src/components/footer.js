@@ -2,7 +2,7 @@ import React from "react";
 import style from "../css/footer.module.css";
 import { Button } from "./button";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <React.Fragment>
       <section className={style["footer-container"]}>
@@ -15,7 +15,7 @@ export default function Footer() {
             discounts and interesting facts about our cosmetic ingredients
             directly to your inbox. No spam, only valuable information.
           </p>
-          <Button text={"Subscribe"} />
+          <Button text={"Subscribe"} onOpen={props.onOpen} />
         </div>
       </section>
     </React.Fragment>

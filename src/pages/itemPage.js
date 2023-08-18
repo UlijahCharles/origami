@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import useFetch from "../hooks/use-Fetch";
@@ -7,6 +7,8 @@ import style from "../css/itemPage.module.css";
 import { ItemButton } from "../components/itemButton";
 import { Button } from "../components/button";
 import CartButton from "../components/cartButton";
+import CartModal from "../components/cartModal";
+import StoreContext from "../context/store-context";
 
 function textCreation(string) {
   let stringCopy = string;
@@ -50,6 +52,8 @@ function randomPicker(currentItem, catalogData) {
 }
 
 function ItemPage() {
+  const ctx = useContext(StoreContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const catalogData = useFetch();
   const searchParam = textCreation(window.location.pathname.substring(1));
   let currentItem = catalogData.find((el) => el.title === searchParam);
@@ -58,9 +62,18 @@ function ItemPage() {
     window.location.pathname.substring(1)
   );
 
-  console.log(currentLink);
-
   const seeMoreItems = randomPicker(currentItem, catalogData);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  let currentItemCopy = {};
+
+  if (!currentItem) {
+  } else {
+    currentItemCopy = currentItem;
+  }
+
   return (
     <React.Fragment>
       <Nav />
@@ -80,7 +93,11 @@ function ItemPage() {
                 Discover the world of Japanese natural cosmetics and feel its
                 incredible power and beauty.
               </p>
-              <Button text={"Order Now"} />
+              <Button
+                text={"Order Now"}
+                onAdd={ctx.AddItem}
+                itemData={currentItemCopy}
+              />
             </div>
           </div>
           <div className={`col-12 col-lg-6 `}>
@@ -204,8 +221,9 @@ function ItemPage() {
           "Loading......."
         )}
       </div>
-      <CartButton />
+      <CartButton onOpen={openModal} />
       <Footer />
+      {isModalOpen && <CartModal onClose={closeModal} />}
     </React.Fragment>
   );
 }
