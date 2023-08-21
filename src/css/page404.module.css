@@ -1,0 +1,47 @@
+body {
+  background-color: #171717;
+}
+
+.header {
+  color: white;
+  font-size: 25vw;
+  margin: 2% 0;
+}
+
+.logos {
+  width: 200px;
+}
+
+.sub-header {
+  color: white;
+  font-size: 6vw;
+  margin: 2% 0;
+}
+
+.info {
+  font-size: 2vw;
+  width: 50%;
+  color: white;
+  margin: 0 auto;
+}
+
+.info-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button-home {
+  background-color: #f8f8f8;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  margin: 4% 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.button-home:hover {
+  background-color: black;
+  color: white;
+}
