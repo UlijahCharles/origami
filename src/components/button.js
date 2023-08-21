@@ -7,7 +7,11 @@ export const Button = (props) => {
     <button
       className={style["button-purchase"]}
       onClick={(e) => {
-        props.onAdd(props.itemData);
+        if (props.onAdd) {
+          props.onAdd(props.itemData);
+        } else {
+          props.onOpen();
+        }
       }}
     >
       {props.text}

@@ -18,10 +18,18 @@ export default function About() {
                 products using advanced technologies and innovative ingredients
                 for over 85 years.
               </p>
-              <img src={img1} alt="" className={style["about-img_one"]} />
+              <img
+                src={img1}
+                alt="Product"
+                className={style["about-img_one"]}
+              />
             </div>
             <div className="col-12 col-lg-6">
-              <img src={img2} alt="" className={style["about-img_two"]} />
+              <img
+                src={img2}
+                alt="Product"
+                className={style["about-img_two"]}
+              />
             </div>
             <div className="col-12 col-lg-3">
               <p className={style["about-description_two"]}>

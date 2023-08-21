@@ -24,7 +24,7 @@ export default function Principles() {
                 <img
                   className={style["principle-image"]}
                   src={principleOneImage}
-                  alt=""
+                  alt="Marketing Production"
                 ></img>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Principles() {
                 <img
                   className={style["principle-image"]}
                   src={principleTwoImage}
-                  alt=""
+                  alt="Marketing Production"
                 ></img>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function Principles() {
                 <img
                   className={style["principle-image"]}
                   src={principleThreeImage}
-                  alt=""
+                  alt="Marketing Production"
                 ></img>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Principles() {
                 <img
                   className={style["principle-image"]}
                   src={principleFourImage}
-                  alt=""
+                  alt="Marketing Production"
                 ></img>
               </div>
             </div>

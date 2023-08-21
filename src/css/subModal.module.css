@@ -68,3 +68,15 @@ input:focus-visible {
   background-color: black;
   color: white;
 }
+
+@media only screen and (max-width: 992px) {
+  form {
+    min-width: 50%;
+    max-width: 60%;
+    left: 25vw;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+}

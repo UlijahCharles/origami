@@ -115,4 +115,7 @@ h3 {
   .seeMore-container {
     flex-wrap: wrap;
   }
+
+  .seeMore-item {
+  }
 }

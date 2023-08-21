@@ -26,7 +26,11 @@ export default function Catalog() {
             <div className="col-12 col-lg-3">
               <h3 className={style["catalog-sub-title"]}>
                 素敵なハチドリ
-                <img src={birdLogo} alt="" className={style["catalog-logo"]} />
+                <img
+                  src={birdLogo}
+                  alt="Catalog Logo"
+                  className={style["catalog-logo"]}
+                />
               </h3>
               <p className={style["catalog-description"]}>
                 Serum based on the nectar of flowering plants growing in the
@@ -42,7 +46,7 @@ export default function Catalog() {
               <Link to="kind_flamingo" className={style["catalog-item-anchor"]}>
                 <img
                   src={kindFlamingo}
-                  alt=""
+                  alt="Catalog Item"
                   className={`${style["catalog-item"]} ${style["catalog-item-relative-postion"]}`}
                 />
               </Link>
@@ -56,7 +60,7 @@ export default function Catalog() {
               >
                 <img
                   src={niceHumming}
-                  alt=""
+                  alt="Catalog Item"
                   className={style["catalog-item"]}
                 />
               </Link>
@@ -69,7 +73,7 @@ export default function Catalog() {
               <Link to="wise_turtle" className={style["catalog-item-anchor"]}>
                 <img
                   src={wiseTurtle}
-                  alt=""
+                  alt="Catalog Item"
                   className={style["catalog-item"]}
                 />
               </Link>
@@ -81,7 +85,11 @@ export default function Catalog() {
             <div className="col-12 col-lg-3"></div>
             <div className="col-12 col-lg-6">
               <Link to="purple_fox" className={style["catalog-item-anchor"]}>
-                <img src={purpleFox} alt="" className={style["catalog-item"]} />
+                <img
+                  src={purpleFox}
+                  alt="Catalog Item"
+                  className={style["catalog-item"]}
+                />
               </Link>
               <div className={style["catalog-hover_text"]}>Purple Fox</div>
               <div className={style["catalog-hover_subtext"]}>Order Now</div>
@@ -89,7 +97,11 @@ export default function Catalog() {
             <div className="col-12 col-lg-3">
               <h3 className={style["catalog-sub-title"]}>
                 素敵なハチドリ
-                <img src={foxLogo} alt="" className={style["catalog-logo"]} />
+                <img
+                  src={foxLogo}
+                  alt="Catalog Logo"
+                  className={style["catalog-logo"]}
+                />
               </h3>
               <p
                 className={style["catalog-description"]}
@@ -106,7 +118,7 @@ export default function Catalog() {
               <Link to="white_octopus" className={style["catalog-item-anchor"]}>
                 <img
                   src={whiteOctopus}
-                  alt=""
+                  alt="Catalog Item"
                   className={`${style["catalog-item"]} ${style["catalog-item-relative-postion"]}`}
                 />
               </Link>
@@ -127,7 +139,7 @@ export default function Catalog() {
               >
                 <img
                   src={beautifulOstrich}
-                  alt=""
+                  alt="Catalog Item"
                   className={style["catalog-item"]}
                   id={style["beautiful-ostrich"]}
                 />
@@ -142,7 +154,7 @@ export default function Catalog() {
               <Link to="kind_lizard" className={style["catalog-item-anchor"]}>
                 <img
                   src={kindLizard}
-                  alt=""
+                  alt="Catalog Item"
                   className={style["catalog-item"]}
                 />
               </Link>
@@ -154,7 +166,11 @@ export default function Catalog() {
           <div className="row">
             <div className="col-12 col-lg-6">
               <Link to="free_swan" className={style["catalog-item-anchor"]}>
-                <img src={freeSwan} alt="" className={style["catalog-item"]} />
+                <img
+                  src={freeSwan}
+                  alt="Catalog Item"
+                  className={style["catalog-item"]}
+                />
               </Link>
               <div className={style["catalog-hover_text"]}>Free Swan</div>
               <div className={style["catalog-hover_subtext"]}>Order Now</div>
@@ -163,7 +179,11 @@ export default function Catalog() {
             <div className="col-12 col-lg-3">
               <h3 className={style["catalog-sub-title"]}>
                 自由人
-                <img src={swanLogo} alt="" className={style["catalog-logo"]} />
+                <img
+                  src={swanLogo}
+                  alt="Catalog Logo"
+                  className={style["catalog-logo"]}
+                />
               </h3>
               <p className={style["catalog-description"]}>
                 The composition includes leaves, stems, roots and flowers of
@@ -176,7 +196,7 @@ export default function Catalog() {
               <Link to="big_elephant" className={style["catalog-item-anchor"]}>
                 <img
                   src={bigElephant}
-                  alt=""
+                  alt="Catalog Item"
                   className={`${style["catalog-item"]} ${style["catalog-item-relative-postion"]}`}
                 />
               </Link>

@@ -15,14 +15,21 @@ export default function CartItem(props) {
 
   return (
     <div>
-      <img className={style[`item-img`]} src={props.imgUrl}></img>
+      <img
+        className={style[`item-img`]}
+        src={props.imgUrl}
+        alt="Cart Item"
+      ></img>
       <p className={style[`item-title`]}>{props.title}</p>
       <div className={style[`product-control`]}>
         <span
           className={style[`product-control__minus`]}
           onClick={minusFunction}
         >
-          <img src="https://static.tildacdn.com/lib/linea/c8eecd27-9482-6c4f-7896-3eb09f6a1091/arrows_circle_minus.svg" />
+          <img
+            src="https://static.tildacdn.com/lib/linea/c8eecd27-9482-6c4f-7896-3eb09f6a1091/arrows_circle_minus.svg"
+            alt="Cart Minus Button"
+          />
         </span>
         <span className={style[`product-control__quantity`]}>
           <input
@@ -34,7 +41,10 @@ export default function CartItem(props) {
           />
         </span>
         <span className={style[`product-control__plus`]} onClick={addFunction}>
-          <img src="https://static.tildacdn.com/tild3865-6463-4332-a230-653238316533/arrows_circle_plus_1.svg" />
+          <img
+            src="https://static.tildacdn.com/tild3865-6463-4332-a230-653238316533/arrows_circle_plus_1.svg"
+            alt="Cart Add Button"
+          />
         </span>
       </div>
       <p className={style[`item-total`]}>$ {props.total}</p>

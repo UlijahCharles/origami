@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import useFetch from "../hooks/use-Fetch";

@@ -36,6 +36,10 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .footer-container {
+    height: 60vw;
+  }
+
   .footer-title-container {
     width: 100%;
     float: none;

@@ -63,3 +63,9 @@ input:focus-visible {
   background-color: black;
   color: white;
 }
+
+@media only screen and (max-width: 992px) {
+  form {
+    max-width: 25%;
+  }
+}

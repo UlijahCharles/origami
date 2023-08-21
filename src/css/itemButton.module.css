@@ -38,3 +38,22 @@
   opacity: 1;
   transform: translateY(60%);
 }
+
+@media only screen and (max-width: 992px) {
+  .catalog-item {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .catalog-hover_text {
+    max-width: 250px;
+    left: 15%;
+  }
+
+  .catalog-hover_subtext {
+    max-width: 250px;
+
+    left: 15%;
+  }
+}
